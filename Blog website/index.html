@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> BlogCoding.com</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1187/1187544.png" type="image/png">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="https://cdn-icons-png.flaticon.com/512/1187/1187544.png" alt="" width="30" height="24"
+          class="d-inline-block align-text-top">
+        Blog<span>Coding</span></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-4">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    languages
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">HTML</a></li>
+                    <li><a class="dropdown-item" href="#">CSS</a></li>
+                    <li><a class="dropdown-item" href="#">Javascript</a></li>
+                    <li><a class="dropdown-item" href="#">Bootstrap</a></li>
+                    <li><a class="dropdown-item" href="#">React.Js</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Articles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Membership</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex ms-0">
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success me-2" type="submit">Search</button>
+        </form>
+        <a href="#"> <button type="button" class="btn btn-light me-3">Signup</button></a>
+        <a href="#"><i class="fa fa-user me-3"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./asset/1.jpg" class="d-block w-100">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Welcome To Coding Blog</h2>
+          <p>Programming Blogs, News, Updates</p>
+          <a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank" class="btn btn-primary">Web
+            Development</a>
+          <a href="https://techcrunch.com" target="_blank" class="btn btn-danger">Tech</a>
+          <a href="https://www.w3schools.com/" target="_blank" class="btn btn-success">Free Resources</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./asset/2.jpg" class="d-block w-100">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>No.1 Place for Programmers</h2>
+          <p>Level up your skills with us</p>
+          <a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank" class="btn btn-primary">Web
+            Development</a>
+          <a href="https://techcrunch.com" target="_blank" class="btn btn-danger">Tech</a>
+          <a href="https://www.w3schools.com/" target="_blank" class="btn btn-success">Free Resources</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./asset/3.jpg" class="d-block w-100">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Join us</h2>
+          <p>Get some amazing free stuff on programming</p>
+          <a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank" class="btn btn-primary">Web
+            Development</a>
+          <a href="https://techcrunch.com" target="_blank" class="btn btn-danger">Tech</a>
+          <a href="https://www.w3schools.com/" target="_blank" class="btn btn-success">Free Resources</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  </div>
+
+  <div class="row">
+    <!-- Blog Posts Section -->
+    <div class="col-md-8 mt-5 navbar navbar-light bg-light">
+      <div class="container-fluid justify-content-center">
+        <h1 class="mb-4 text-center navbar-brand mb-0 ms-5">Latest Posts</h1>
+      </div>
+
+      <div style="border: 2px solid black; padding: 10px; display: inline-block; ms-3; border-radius: 10px">
+        <div class="card mb-4 ms-3" style="width: 97%; margin: 0;">
+          <img src="./asset/latest1.jpg
+        " class="card-img-top" alt="Post 1">
+          <div class="card-body">
+            <h2 class="card-title">Top Programming Blogs to Read in 2024</h2>
+            <p class="card-text">
+            <p>If you want to succeed as a developer, you need to immerse yourself in the coding
+              culture. The programming field is so vast, and there is so much information to absorb that you’ll never
+              get
+              on top if you don’t keep involved enough in all the news and updates.</p>
+            <p>Here at PandaDoc, we strongly believe that learning is a key value. Even though we’re all experts in our
+              respective fields, we always make time to expand our minds.
+              Check out that list of the best tech blogs shared by our PandaDoc API team, to be informed about the
+              latest
+              happenings in the industry.</p>
+            <a href="https://www.pandadoc.com/api/?utm_source=Medium&utm_medium=Top-Programming-Blogs&utm_campaign=2022-dev-blog"
+              class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+
+        <div class="card mb-4 ms-3" style="width: 97%; margin: 0; ">
+          <img src="./asset/latest2.jpg" class="card-img-top" alt="Post 2">
+          <div class="card-body">
+            <h2 class="card-title">Enhance Your Coding Blog: Strategies for Engaging Content Creation</h2>
+            <p class="card-text">
+            <p>Hey coders! Today we’re discussing taking your tech blog from a private space to a
+              vibrant online community. Sometimes our blogs become like code repositories — great for personal
+              organisation, but not exactly user-friendly.If you’re ready to expand your blog and share your coding
+              journey with the world, here’s a roadmap to get
+              you there</p>
+            <span>From Thought Drafts to Deep Dives:</span>
+            <p>We’ve all been there — starting a blog feels like a brain dump. But to engage readers, go beyond basic
+              summaries. Let’s look at a common issue: explaining a complex concept like recursion. Instead of just
+              defining it, illustrate it with a real-world example, like calculating factorials. Break down the code
+              step-by-step, adding clear annotations to explain each line.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+        <!-- Add more blog post cards as needed -->
+        <a href="https://example.com" class="link-dark ms-3" style="text-decoration: none;">Read More...</a>
+      </div>
+    </div>
+
+
+    <!-- Sidebar Section -->
+    <div class="col-md-4 mt-5">
+      <div class="p-2 mb-4 bg-light rounded">
+        <div style="text-align: center;">
+          <img src="./asset/about.png" class="img-fluid mb-3" alt="Author" style="width: 100px; height: 100px;">
+        </div>
+        <h2>About Me</h2>
+        <p>Hi! My name is Dipesh and I’m the tech-addict and educator behind this website! I started blogging back in
+          2024 to share some ideas that I was using in my blogs, and quickly focused my posts on a combination of
+          hands on activities for students and tech tips for teachers.</p>
+        <p>
+          I have a series of technology tutorials that help break down digital tasks into easy to follow step-by-step
+          directions with pictures, and have even begun to post a series of videos focused on technology tips in one
+          minute to help teachers get more familiar with using Chromebooks in their classrooms.</p>
+        <br>
+        <h2>Disclaimers</h2>
+        <p>
+          All content provided on this blog is for informational purposes only. The owner of this blog makes no
+          representations as to the accuracy or completeness of any information on this site or found by following any
+          link on this site. The owner will not be liable for any errors or omissions in this information nor for the
+          availability of this information. The owner will not be liable for any losses, injuries, or damages from the
+          display or use of this information. These terms and conditions of use are subject to change at any time and
+          without notice.
+        </p>
+      </div>
+
+      <h3 class="mb-3">Categories:</h3>
+      <ul class="list-group">
+        <h5>Tips:</h5>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <!-- Accordion Item #1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Introduction to Python Programming
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                Python is a versatile and powerful programming language that's easy to learn and fun to use. It's widely
+                used in various fields, including web development, data analysis, artificial intelligence, and more.
+                Whether you're a beginner or an experienced programmer, Python offers something for everyone. In this
+                post, we'll cover the basics of Python, including syntax, variables, and basic data structures. You'll
+                also find practical examples to help you get started with writing your own Python code.
+              </div>
+            </div>
+          </div>
+          <!-- Accordion Item #2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Understanding JavaScript Closures
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                Closures are one of the most powerful features of JavaScript, enabling you to write more concise and
+                expressive code. A closure is created when a function is defined within another function, allowing the
+                inner function to access variables from the outer function's scope. This concept is crucial for creating
+                private variables and functions in JavaScript, as well as for implementing callback functions and event
+                handlers. In this post, we'll dive deep into closures, exploring how they work and providing examples to
+                demonstrate their practical applications.
+              </div>
+            </div>
+          </div>
+          <!-- Accordion Item #3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Mastering Git and GitHub for Version Control
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                Git and GitHub have become essential tools for developers, enabling efficient version control and
+                collaboration on projects. Git allows you to track changes in your code, revert to previous versions,
+                and manage different branches of development. GitHub, on the other hand, provides a platform for hosting
+                your Git repositories online, making it easy to share your code with others and contribute to
+                open-source projects. In this post, we'll walk you through the basics of Git and GitHub, from
+                initializing a repository to pushing your code to GitHub and collaborating with others.
+              </div>
+            </div>
+          </div>
+          <!-- Accordion Item #4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                Exploring CSS Grid Layout
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                CSS Grid Layout is a powerful tool for creating complex and responsive web layouts with ease. Unlike
+                traditional layout methods like floats and Flexbox, CSS Grid allows you to define rows and columns in a
+                grid, enabling precise control over your design. In this post, we'll introduce you to the basics of CSS
+                Grid, including how to create a grid, define areas, and control the placement of items. By the end of
+                this tutorial, you'll be able to create flexible and modern layouts that adapt seamlessly to different
+                screen sizes.
+              </div>
+            </div>
+          </div>
+          <!--Accordion Item #5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                Building RESTful APIs with Node.js and Express
+              </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                RESTful APIs are the backbone of modern web applications, providing a way for different software systems
+                to communicate with each other. Node.js, paired with Express, is a popular choice for building fast and
+                scalable APIs. In this post, we'll walk you through the process of creating a RESTful API using Node.js
+                and Express, covering essential concepts like routing, handling HTTP requests, and connecting to a
+                database. Whether you're building a simple API or a complex backend service, this guide will equip you
+                with the knowledge to get started.
+              </div>
+            </div>
+          </div>
+          <!--Accordion Item #6 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingSix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                Introduction to Data Structures in Java
+              </button>
+            </h2>
+            <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                Data structures are fundamental to writing efficient and effective code, especially in languages like
+                Java, where performance is key. Understanding how to implement and use data structures like arrays,
+                linked lists, stacks, and queues can greatly improve your problem-solving skills. In this post, we'll
+                cover the basic data structures in Java, providing examples and explanations of when and how to use each
+                one. Whether you're preparing for a coding interview or looking to deepen your understanding of Java,
+                this guide will serve as a valuable resource.
+              </div>
+            </div>
+          </div>
+        </div>
+      </ul>
+
+      <br><br>
+      <h4>Check Out!! Hidden Article:</h4>
+      <button class="btn btn-primary ms-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight">Trending article</button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 id="offcanvasRightLabel">Hidden Article</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <h3 class="title featured-content-title">Trending news</h3>
+          <a href="#" class="trending-news-box">
+            <div class="trending-news-img-box">
+              <span class="trending-number place-items-center">01</span>
+              <img src="./asset/trending_1.jpg" alt="" class="article-image">
+            </div>
+            <div class="trending-news-data">
+              <div class="article-data">
+                <span>23 Dec 2021</span>
+                <span class="article-data-spacer"></span>
+                <span>3 Min read</span>
+              </div>
+              <h3 class="title article-title">Sample article title</h3>
+            </div>
+          </a>
+          <a href="#" class="trending-news-box">
+            <div class="trending-news-img-box">
+              <span class="trending-number place-items-center">02</span>
+              <img src="./asset/trending_2.jpg" alt="" class="article-image">
+            </div>
+            <div class="trending-news-data">
+              <div class="article-data">
+                <span>23 Dec 2021</span>
+                <span class="article-data-spacer"></span>
+                <span>3 Min read</span>
+              </div>
+              <h3 class="title article-title">Sample article title</h3>
+            </div>
+          </a>
+
+          <a href="#" class="trending-news-box">
+            <div class="trending-news-img-box">
+              <span class="trending-number place-items-center">03</span>
+              <img src="./asset/trending_3.jpg" alt="" class="article-image">
+            </div>
+            <div class="trending-news-data">
+              <div class="article-data">
+                <span>23 Dec 2021</span>
+                <span class="article-data-spacer"></span>
+                <span>3 Min read</span>
+              </div>
+              <h3 class="title article-title">Sample article title</h3>
+            </div>
+          </a>
+
+          <a href="#" class="trending-news-box">
+            <div class="trending-news-img-box">
+              <span class="trending-number place-items-center">04</span>
+              <img src="./asset/trending_4.jpg" alt="" class="article-image">
+            </div>
+            <div class="trending-news-data">
+              <div class="article-data">
+                <span>23 Dec 2021</span>
+                <span class="article-data-spacer"></span>
+                <span>3 Min read</span>
+              </div>
+              <h3 class="title article-title">Sample article title</h3>
+            </div>
+          </a>
+
+          <a href="#" class="trending-news-box">
+            <div class="trending-news-img-box">
+              <span class="trending-number place-items-center">05</span>
+              <img src="./asset/trending_5.jpg" alt="" class="article-image">
+            </div>
+            <div class="trending-news-data">
+              <div class="article-data">
+                <span>23 Dec 2021</span>
+                <span class="article-data-spacer"></span>
+                <span>3 Min read</span>
+              </div>
+              <h3 class="title article-title">Sample article title</h3>
+            </div>
+          </a>
+          <a href="https://example.com" class="link-dark ms-3" style="text-decoration: none;">Read More...</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<br>
+  <!-- blog section -->
+   <h4 style="text-align: center;">Blogs Updates...</h4>
+  <div class="container my-4">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="./asset/Blog1.jpg" class="bd-placeholder-img card-img-top">
+          <div class="card-body">
+            <p class="card-text">Best free Python resources for beginners to learn for free.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondry">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondry">Edit</button>
+              </div>
+              <small class="text-muted">5 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="./asset/Blog2.jpg" class="bd-placeholder-img card-img-top">
+          <div class="card-body">
+            <p class="card-text">Fullstack Development Complete Roadmap in 2023.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondry">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondry">Edit</button>
+              </div>
+              <small class="text-muted">32 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="./asset/Blog3.jpg" class="bd-placeholder-img card-img-top">
+          <div class="card-body">
+            <p class="card-text">5 Amazing Websites Useful For Web Developers.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondry">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondry">Edit</button>
+              </div>
+              <small class="text-muted">1 hr</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="./asset/Blog4.jpg" class="bd-placeholder-img card-img-top">
+          <div class="card-body">
+            <p class="card-text">How to Upload a Website for Free on Github.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondry">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondry">Edit</button>
+              </div>
+              <small class="text-muted">4 hrs</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="./asset/Blog5.jpg" class="bd-placeholder-img card-img-top">
+          <div class="card-body">
+            <p class="card-text">5 Amazing Backend Frameworks for Web Developers.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondry">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondry">Edit</button>
+              </div>
+              <small class="text-muted">8 hrs</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="./asset/Blog6.jpg" class="bd-placeholder-img card-img-top">
+          <div class="card-body">
+            <p class="card-text">Top 10 Github Repositories for Web Developers.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondry">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondry">Edit</button>
+              </div>
+              <small class="text-muted">18 hrs</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <h4 style="text-align: center;">Tech Jobs</h4>
+    <div class="tech">
+      <div class="card mb-3 active" id="card1" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./asset/tech1.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Skills Essential to Crack Tech Jobs in 2024</h5>
+              <p class="card-text">Hey there! So, you're thinking about upskilling and wondering which tech skills are
+                going to give you the edge
+                in 2024. Great move! With the tech landscape evolving rapidly, staying</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3" id="card2" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./asset/tech1.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Skills Essential to Crack Tech Jobs in 2024</h5>
+              <p class="card-text">Hey there! So, you're thinking about upskilling and wondering which tech skills are
+                going to give you the edge
+                in 2024. Great move! With the tech landscape evolving rapidly, staying</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3" id="card3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./asset/tech1.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Skills Essential to Crack Tech Jobs in 2024</h5>
+              <p class="card-text">Hey there! So, you're thinking about upskilling and wondering which tech skills are
+                going to give you the edge
+                in 2024. Great move! With the tech landscape evolving rapidly, staying</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation">
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#" data-target="#card1">1</a></li>
+          <li class="page-item"><a class="page-link" href="#" data-target="#card2">2</a></li>
+          <li class="page-item"><a class="page-link" href="#" data-target="#card3">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" data-target="#card3">Next</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <br>
+
+    <h4 style="text-align: center;">Top 25+ Best Programming Blogs to Follow in 2024</h4>
+    <br>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="./asset/Top25-1.png" class="card-img-top" alt="Programming Blog 1">
+          <div class="card-body">
+            <h5 class="card-title">
+              <a href="https://www.smashingmagazine.com" target="_blank" style="text-decoration: none; color: black;">1.
+                Smashing Magazine</a>
+            </h5>
+            <p class="card-text">Smashing Magazine offers a plethora of articles on web design, coding, and best
+              practices in programming. It's a must-read for developers of all levels.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="./asset/Top25-2.png" class="card-img-top" alt="Programming Blog 2">
+          <div class="card-body">
+            <h5 class="card-title">
+              <a href="https://css-tricks.com" target="_blank" style="text-decoration: none; color: black;">2.
+                CSS-Tricks</a>
+            </h5>
+            <p class="card-text">CSS-Tricks is a go-to resource for front-end developers. It covers everything from CSS
+              fundamentals to advanced design concepts.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="./asset/Top25-3.png" class="card-img-top" alt="Programming Blog 3">
+          <div class="card-body">
+            <h5 class="card-title">
+              <a href="https://davidwalsh.name" target="_blank" style="text-decoration: none; color: black;">3. David
+                Walsh Blog</a>
+            </h5>
+            <p class="card-text">David Walsh's blog is packed with tutorials on JavaScript, HTML5, and other web
+              technologies, perfect for developers looking to enhance their skills.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="./asset/Top25-4.png" class="card-img-top" alt="Programming Blog 4">
+          <div class="card-body">
+            <h5 class="card-title">
+              <a href="https://alistapart.com" target="_blank" style="text-decoration: none; color: black;">4. A List
+                Apart</a>
+            </h5>
+            <p class="card-text">A List Apart explores the design, development, and meaning of web content, offering
+              deep insights for serious web professionals.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <a href="https://example.com" class="link-dark ms-3" style="text-decoration: none;">Read More...</a>
+  </div>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="sec aboutus">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus quisquam minus quo illo numquam vel
+          incidunt pariatur hic commodi expedita tempora praesentium at iure fugiat ea, quam laborum aperiam veritatis.
+        </p>
+        <ul class="icon">
+          <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
+          <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
+          <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
+          <li><a href="#"><i class="bx bxl-linkedin"></i></a></li>
+        </ul>
+      </div>
+      <div class="sec quicklinks">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+
+        </ul>
+      </div>
+      <div class="sec contactBx">
+        <h2>Contact Info</h2>
+        <ul class="info">
+          <li>
+            <span><i class='bx bxs-map'></i></span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, vero.</p>
+          </li>
+          <li>
+            <span><i class='bx bx-envelope'></i></span>
+            <p><a href="#">BlogCoding.com</a></p>
+          </li>
+        </ul>
+      </div>
+      <p>
+        <a href="#" class="nav-link active">Back to top <i class="fas fa-arrow-up"></i></a>
+      </p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
